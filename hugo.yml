@@ -29,7 +29,6 @@ menu:
       name: Archives
       url: /archives/
       weight: 30
-
-  caches:
-    images:
-      dir: :cacheDir/images
+caches:
+  images:
+    dir: :cacheDir/images
