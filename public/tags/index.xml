@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Tags on Comix Homepage</title>
+    <link>//localhost:1313/tags/</link>
+    <description>Recent content in Tags on Comix Homepage</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2026 16:13:39 -0700</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>DJ</title>
+      <link>//localhost:1313/tags/dj/</link>
+      <pubDate>Tue, 17 Mar 2026 16:13:39 -0700</pubDate>
+      <guid>//localhost:1313/tags/dj/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Khalid</title>
+      <link>//localhost:1313/tags/khalid/</link>
+      <pubDate>Tue, 17 Mar 2026 16:13:39 -0700</pubDate>
+      <guid>//localhost:1313/tags/khalid/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>C0ck</title>
+      <link>//localhost:1313/tags/c0ck/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/c0ck/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Nigger</title>
+      <link>//localhost:1313/tags/nigger/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/tags/nigger/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

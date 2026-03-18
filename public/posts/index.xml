@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on Comix Homepage</title>
+    <link>//localhost:1313/posts/</link>
+    <description>Recent content in Posts on Comix Homepage</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 17 Mar 2026 16:13:39 -0700</lastBuildDate>
+    <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First</title>
+      <link>//localhost:1313/posts/first/</link>
+      <pubDate>Tue, 17 Mar 2026 16:13:39 -0700</pubDate>
+      <guid>//localhost:1313/posts/first/</guid>
+      <description>&lt;h1 id=&#34;nigger-1&#34;&gt;Nigger 1&lt;/h1&gt;
+&lt;h2 id=&#34;nigger-2&#34;&gt;Nigger 2&lt;/h2&gt;
+&lt;p&gt;G A T O R A D E&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Second</title>
+      <link>//localhost:1313/posts/second/</link>
+      <pubDate>Tue, 17 Mar 2026 16:13:39 -0700</pubDate>
+      <guid>//localhost:1313/posts/second/</guid>
+      <description>&lt;h1 id=&#34;zane-is-gay&#34;&gt;Zane is gay&lt;/h1&gt;
+&lt;h2 id=&#34;fax&#34;&gt;Fax&lt;/h2&gt;
+&lt;p&gt;Y O U E V E R P L A Y E D R U G B Y&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
