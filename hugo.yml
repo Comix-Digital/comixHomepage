@@ -31,5 +31,5 @@ menu:
       weight: 30
 
   caches:
-  images:
-    dir: :cacheDir/images
+    images:
+      dir: :cacheDir/images
