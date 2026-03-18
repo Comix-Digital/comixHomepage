@@ -1,4 +1,4 @@
-baseURL: ""
+baseURL: "https://comix-digital.github.io/comixHomepage/"
 locale: en-us
 title: Comix Homepage
 theme: PaperMod
