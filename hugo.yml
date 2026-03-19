@@ -1,15 +1,12 @@
 baseURL: "https://comix-digital.github.io/comixHomepage/"
 locale: en-us
-title: Comix Homepage
+title: Comix
 theme: PaperMod
 
 params:
-  homeInfoParams:
-    Title: "Hello mom"
-    Content: "Welcome to my website"
-
   cover:
     linkFullImages: true
+    responsiveImages: true
 
   ShowBreadCrumbs: true
   ShowReadingTime: true

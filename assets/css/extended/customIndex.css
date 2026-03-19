@@ -1,0 +1,18 @@
+.customHome {
+    display: flex;
+    justify-content: center;
+}
+
+.CDLogo {
+    max-width: 50%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.aButton {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    text-decoration: none;
+    box-shadow: 0 0px;
+}

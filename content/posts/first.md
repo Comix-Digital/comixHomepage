@@ -4,6 +4,7 @@ draft = false
 title = 'First'
 tags = ["DJ", "Khalid"]
 categories = ["zorro"]
+hiddenInHomeList = true
 [cover]
     image = 'images/Zorro.jpg'
     alt = 'Image of cool dog on a bed.'
@@ -13,4 +14,4 @@ categories = ["zorro"]
 # WE THE BEST MUSIC
 ## Anotha One
 
-G A T O R A D E
+<a href="https://www.google.com" target="_blank" class="customHome">G A T O R A D E</a>
