@@ -4,15 +4,18 @@
 }
 
 .CDLogo {
-    max-width: 50%;
+    max-width:35vw;
+    max-height:35vw;
+    width: auto;
     height: auto;
-    border-radius: 8px;
 }
 
 .aButton {
-    display: flex;
+    border: 0.2em solid black;
+    border-radius: 50px;
     justify-content: center;
-    background-color: transparent;
+    background-color: white;
+    flex-shrink: 1;
     text-decoration: none;
     box-shadow: 0 0px;
 }
