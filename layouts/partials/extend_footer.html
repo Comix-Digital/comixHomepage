@@ -8,11 +8,13 @@
     let m = document.querySelector(".menu")
     b.addEventListener("click", function () {
         m.classList.toggle("hidden")
+        b.style.display = "none"
     });
     // hide menu when clicked outside
     document.body.addEventListener('click', function (event) {
         if (!b.contains(event.target)) {
             m.classList.add("hidden")
+            b.style.display = "block"
         }
     });
     // END hamburger menu

@@ -33,7 +33,10 @@
         right: 0;
         z-index: 5;
         margin-bottom: var(--gap);
-        padding: 0.8em;
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+        padding-bottom: 0.1em;
+        padding-top: 0.1em;
         background: var(--code-bg);
         border-radius: var(--radius);
         border: 2px solid var(--tertiary);
