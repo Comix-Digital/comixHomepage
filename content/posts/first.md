@@ -14,4 +14,4 @@ hiddenInHomeList = true
 # WE THE BEST MUSIC
 ## Anotha One
 
-<a href="https://www.google.com" target="_blank" class="customHome">G A T O R A D E</a>
+G A T O R A D E

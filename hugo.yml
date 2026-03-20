@@ -7,11 +7,12 @@ params:
   cover:
     linkFullImages: true
     responsiveImages: true
-
   ShowBreadCrumbs: true
   ShowReadingTime: true
   ShowShareButtons: true
   ShowPostNavLinks: true
+  defaultTheme: light
+  disableThemeToggle: true
 menu:
   main:
     - identifier: categories
