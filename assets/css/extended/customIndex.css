@@ -23,3 +23,19 @@
     box-shadow: 0 0px;
     margin-bottom: 30vh;
 }
+
+a {
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+button {
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+a:hover {
+    transform: scale(95%);
+}
+
+button:hover {
+    transform: scale(95%);
+}
