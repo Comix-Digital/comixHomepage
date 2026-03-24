@@ -9,6 +9,9 @@ params:
     responsiveImages: true
   defaultTheme: light
   disableThemeToggle: true
+  label:
+    icon: "images/comixLogoFull.png"
+    text: " "
 menu:
   main:
     - identifier: about
