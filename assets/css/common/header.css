@@ -32,8 +32,11 @@
     vertical-align: middle;
     pointer-events: none;
     transform: translate(0, -10%);
-    border-radius: 6px;
+    border-radius: var(--radius);
     margin-inline-end: 8px;
+    border: 2px solid var(--tertiary);
+    padding: 6px;
+    margin-top: 1px;
 }
 
 button#theme-toggle {

@@ -12,6 +12,7 @@ params:
   label:
     icon: "images/comixLogoFull.png"
     text: " "
+    iconHeight: 40
 menu:
   main:
     - identifier: about
