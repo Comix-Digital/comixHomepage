@@ -11,6 +11,7 @@
     word-break: keep-all;
     overflow-x: auto;
     white-space: nowrap;
+    opacity: 100%;
 }
 
 .menu li+li {
@@ -50,6 +51,7 @@
         line-height: 2.5;
         margin: calc(var(--header-height) - 49.9px) var(--gap);
         display: block;
+        opacity: 0%;
     }
 
     .list .menu {
@@ -62,11 +64,13 @@
 
     #menu-trigger {
         font-size: 30px;
-        position: relative;
+        position: absolute;
         display: block;
         float: right;
         margin: auto var(--gap);
         top: 8px;
+        right: 0;
+        opacity: 100%;
     }
 
     .menu.hidden {

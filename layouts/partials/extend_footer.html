@@ -4,17 +4,68 @@
 
 <script>
     // START hamburger menu
+    let menuHidden = true;
     let b = document.querySelector("#menu-trigger")
     let m = document.querySelector(".menu")
     b.addEventListener("click", function () {
-        m.classList.toggle("hidden")
-        b.style.display = "none"
+        if (menuHidden) {
+            gsap.to("#menu-trigger-icon line", {
+                opacity: 0,
+                duration: "0.05",
+            });
+            m.classList.toggle("hidden")
+            gsap.to("#menu-trigger-icon", {
+                width: m.getBoundingClientRect().width,
+                height: m.getBoundingClientRect().height,
+                duration: 0.2,
+            });
+            gsap.to("#menu-trigger", {
+                top: "10px",
+                duration: 0.2,
+            });
+            gsap.to("#menu-trigger", {
+                display: "none",
+                duration: 0,
+                delay: 0.2,
+            });
+            gsap.to(".menu", {
+                opacity: "100%",
+                duration: 0,
+                delay: 0.2,
+            });
+            menuHidden = false;
+        }
     });
     // hide menu when clicked outside
     document.body.addEventListener('click', function (event) {
         if (!b.contains(event.target)) {
-            m.classList.add("hidden")
-            b.style.display = "block"
+            if (!menuHidden) {
+                gsap.to(".menu", {
+                    opacity: "0%",
+                    duration: 0,
+                });
+                gsap.to("#menu-trigger", {
+                    display: "block",
+                    duration: 0,
+                });
+                gsap.to("#menu-trigger", {
+                    top: "8px",
+                    duration: 0.2,
+                });
+                gsap.to("#menu-trigger-icon", {
+                    width: "40px",
+                    height: "40px",
+                    duration: 0.2,
+
+                });
+                m.classList.toggle("hidden")
+                gsap.to("#menu-trigger-icon line", {
+                    opacity: "100%",
+                    duration: "0.1",
+                    delay: 0.1,
+                });
+                menuHidden = true;
+            }
         }
     });
     // END hamburger menu
