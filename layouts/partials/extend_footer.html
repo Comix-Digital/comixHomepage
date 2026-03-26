@@ -18,10 +18,12 @@
                 width: m.getBoundingClientRect().width,
                 height: m.getBoundingClientRect().height,
                 duration: 0.2,
+                ease: "power3.out",
             });
             gsap.to("#menu-trigger", {
                 top: "10px",
                 duration: 0.2,
+                ease: "power3.out",
             });
             gsap.to("#menu-trigger", {
                 display: "none",
@@ -51,11 +53,13 @@
                 gsap.to("#menu-trigger", {
                     top: "8px",
                     duration: 0.2,
+                    ease: "power3.out",
                 });
                 gsap.to("#menu-trigger-icon", {
                     width: "40px",
                     height: "40px",
                     duration: 0.2,
+                    ease: "power3.out",
 
                 });
                 m.classList.toggle("hidden")
