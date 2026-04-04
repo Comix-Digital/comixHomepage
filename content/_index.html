@@ -2,4 +2,40 @@
     <a class="aButton" href="https://comix-digital.github.io/comixDigitalSite/" style="box-shadow: 0 0px">
         <img src="/comixHomepage/images/mainblack.png" alt="Comix Digital logo." width="4096" height="4096" class="CDLogo" style="margin: 0 0">
     </a>
+    <span id="bgChangeCircle"></span>
 </div>
+
+<script>
+    let bgChangeCircle = document.getElementById("bgChangeCircle")
+    let CDLogo = document.querySelector(".CDLogo")
+    let aButton = document.querySelector(".aButton")
+    const root = document.querySelector(':root');
+
+    aButton.addEventListener("mouseenter", function () {
+        bgChangeCircle.style.display = "block";
+        gsap.to(bgChangeCircle, {
+            width: "80vmax",
+            height: "80vmax",
+            ease: "none",
+            duration: 0.5,
+        });
+        gsap.to(bgChangeCircle, {
+            width: "99vw",
+            height: "110vh",
+            "border-radius": "0%",
+            delay: 0.5,
+            ease: "none",
+            duration: 0.5,
+        });
+        gsap.to(root, {
+            "--theme": "rgb(0, 0, 0)",
+            duration: 0,
+            delay: 1,
+        });
+        gsap.to(bgChangeCircle, {
+            display: "none",
+            duration: 0,
+            delay: 1,
+        });
+    })
+</script>

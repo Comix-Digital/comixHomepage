@@ -39,3 +39,14 @@ a:hover {
 button:hover {
     transform: scale(95%);
 }
+
+#bgChangeCircle {
+    height: 25vw;
+    width: 25vw;
+    background-color: #000000;
+    border-radius: 50%;
+    position: absolute;
+    margin-bottom: 30vh;
+    z-index: -3;
+    display: none;
+}
