@@ -14,8 +14,8 @@
     const root = document.querySelector(':root');
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.canvas.width = Math.ceil((window.innerWidth * 50 / 100));
-    ctx.canvas.height = Math.ceil((window.innerWidth * 50 / 100));
+    ctx.canvas.width = Math.ceil((window.innerWidth * 100 / 100));
+    ctx.canvas.height = Math.ceil((window.innerWidth * 100 / 100));
 
     function animateCirclePixels(x, y, r, color) {
         var i;
@@ -25,20 +25,20 @@
         
         ctx.fillStyle = color;
 
-        for(i = 0; i < 360; i += 0.1)
+        for(i = 0; i < 360; i += 1)
         {
             angle = i;
             x1 = r * Math.cos(angle * Math.PI / 180);
             console.log(Math.round(x1));
             y1 = r * Math.sin(angle * Math.PI / 180);
             console.log(Math.round(y1));
-            ctx.fillRect(x + Math.round(x1), y + Math.round(y1), 1, 1);
+            ctx.fillRect(x + (Math.round(x1) * 20), y + (Math.round(y1) * 20), 20, 20);
         }
     }
 
     aButton.addEventListener("mouseenter", function () {
         if (!animationPlayed) {
-            animateCirclePixels(Math.ceil((window.innerWidth * 50 / 100) / 2), Math.ceil((window.innerWidth * 50 / 100) / 2), 25, "green");
+            animateCirclePixels(Math.ceil((window.innerWidth * 100 / 100) / 2), Math.ceil((window.innerWidth * 100 / 100) / 2), 10, "green");
             bgChangeCircle.style.display = "block";
             gsap.to(bgChangeCircle, {
                 width: "80vmax",

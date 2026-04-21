@@ -22,7 +22,6 @@
     text-decoration: none;
     box-shadow: 0 0px;
     margin-bottom: 30vh;
-    opacity: 0.1;
 }
 
 a {
@@ -55,7 +54,8 @@ button:hover {
 #myCanvas {
     position: absolute;
     z-index: -2;
-    margin-bottom: 30vh;
+    margin-bottom: 33vh;
+    margin-right: 20px;
     border: 0;
     color: white;
 }
