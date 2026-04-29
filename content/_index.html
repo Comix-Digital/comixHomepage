@@ -11,13 +11,15 @@
     let CDLogo = document.querySelector(".CDLogo")
     let aButton = document.querySelector(".aButton")
     let animationPlayed = false;
+    let expandPixels = 120;
     const root = document.querySelector(':root');
+    const delay = ms => new Promise(res => setTimeout(res, ms));
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
-    ctx.canvas.width = Math.ceil((window.innerWidth * 100 / 100));
-    ctx.canvas.height = Math.ceil((window.innerWidth * 100 / 100));
+    ctx.canvas.width = window.innerWidth;
+    ctx.canvas.height = window.innerHeight;
 
-    function animateCirclePixels(x, y, r, color) {
+    function generateCirclePixels(x, y, r, color) {
         var i;
         var angle;
         var x1;
@@ -36,9 +38,19 @@
         }
     }
 
+    async function animateCirclePixels() {
+        for(i = 0; i < 12; i += 1) {
+            generateCirclePixels(Math.ceil(window.innerWidth / 2), Math.ceil(window.innerHeight / 2), Math.ceil(window.innerWidth / expandPixels), "green");
+            await delay(100);
+            ctx.clearRect(0, 0, c.width, c.height);
+            expandPixels = expandPixels - 10;
+        }
+        return 0;
+    }
+
     aButton.addEventListener("mouseenter", function () {
         if (!animationPlayed) {
-            animateCirclePixels(Math.ceil((window.innerWidth * 100 / 100) / 2), Math.ceil((window.innerWidth * 100 / 100) / 2), 10, "green");
+            animateCirclePixels();
             bgChangeCircle.style.display = "block";
             gsap.to(bgChangeCircle, {
                 width: "80vmax",
