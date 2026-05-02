@@ -18,7 +18,7 @@
     var c = document.getElementById("myCanvas");
     var ctx = c.getContext("2d");
     ctx.canvas.width = window.innerWidth;
-    ctx.canvas.height = window.innerHeight;
+    ctx.canvas.height = window.innerWidth;
 
     function generateCirclePixels(x, y, r, color) {
         var i;
@@ -40,7 +40,9 @@
 
     async function animateCirclePixels() {
         for(i = 0; i < 9; i += 1) {
-            generateCirclePixels(Math.ceil(window.innerWidth / 2), Math.ceil(window.innerHeight / 2), Math.ceil(window.innerWidth / expandPixels[i]), "green");
+            generateCirclePixels(Math.ceil(window.innerWidth / 2), Math.ceil(window.innerWidth / 2), Math.ceil(window.innerWidth / expandPixels[i]), "DarkGreen");
+            generateCirclePixels(Math.ceil(window.innerWidth / 2), Math.ceil(window.innerWidth / 2), (Math.ceil(window.innerWidth / expandPixels[i])) - 1, "green");
+            generateCirclePixels(Math.ceil(window.innerWidth / 2), Math.ceil(window.innerWidth / 2), (Math.ceil(window.innerWidth / expandPixels[i])) + 1, "green");
             await delay(111);
             ctx.clearRect(0, 0, c.width, c.height);
         }
