@@ -49,13 +49,20 @@ button:hover {
     margin-bottom: 30vh;
     z-index: -3;
     display: none;
+    overflow: hidden;
 }
 
 #myCanvas {
     position: absolute;
-    z-index: -2;
+    z-index: -1;
     margin-bottom: 33vh;
     margin-right: 20px;
     border: 0;
     color: white;
+}
+
+.pixelCloud {
+    position: absolute;
+    z-index: -2;
+    top: 0px;
 }
