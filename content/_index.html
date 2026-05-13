@@ -3,9 +3,10 @@
     <a class="aButton" href="https://comix-digital.github.io/comixDigitalSite/" style="box-shadow: 0 0px">
         <img src="/comixHomepage/images/mainblack.png" alt="Comix Digital logo." width="4096" height="4096" class="CDLogo" style="margin: 0 0">
     </a>
-    <span id="bgChangeCircle">
-        <img src="/comixHomepage/images/pixelCloud.png" alt="Pixelated cloud." width="300" height="169" id="ogPixelCloud" class="pixelCloud">
-    </span>
+    <div id="pixelCloudDiv">
+        <img src="/comixHomepage/images/pixelCloud.png" alt="Pixelated cloud." width="300" height="169" id="ogPixelCloud">
+    </div>
+    <span id="bgChangeCircle"></span>
 </div>
 
 <img src="/comixHomepage/images/oneGreen.svg" alt="Green one." width="20" height="20" id="greenOne" style="display: none">
@@ -17,6 +18,7 @@
     let bgChangeCircle = document.getElementById("bgChangeCircle")
     let CDLogo = document.querySelector(".CDLogo")
     let aButton = document.querySelector(".aButton")
+    let pixelCloudDiv = document.querySelector("#pixelCloudDiv")
     let animationPlayed = false;
     let tl = gsap.timeline();
     const root = document.querySelector(':root');
@@ -69,8 +71,6 @@
             ctx.clearRect(0, 0, c.width, c.height);
         }
         console.log("Done");
-        pixelCloud.style.display = "block";
-        pixelCloud.style.top = "-75px";
         return 0;
     }
 
@@ -91,6 +91,16 @@
                 ease: "none",
                 duration: 0.5,
             });
+            tl.to(pixelCloudDiv, {
+                clipPath: "circle(40vmax)",
+                ease: "none",
+                duration: 0.5,
+            }, 0);
+            tl.to(pixelCloudDiv, {
+                clipPath: "circle(50vw)",
+                ease: "none",
+                duration: 0.5,
+            }, 0.5);
             tl.to(root, {
                 "--theme": "rgb(0, 0, 0)",
                 duration: 0,
