@@ -70,7 +70,7 @@ button:hover {
 }
 
 #pixelCloudDiv {
-    height: 100vh;
+    height: 500px;
     width: 100vw;
     position: absolute;
     clip-path: circle(12.5vw);
