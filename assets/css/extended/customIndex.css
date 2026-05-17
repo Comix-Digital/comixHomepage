@@ -59,10 +59,11 @@ button:hover {
     color: white;
 }
 
-#ogPixelCloud {
+.pixelCloud {
     position: absolute;
     z-index: -2;
     top: 0px;
+    left: -25vw;
     justify-content: center;
     flex-shrink: 1;
     margin-bottom: 30vh;
@@ -74,6 +75,8 @@ button:hover {
     position: absolute;
     clip-path: circle(12.5vw);
     z-index: -2;
+    overflow-x: clip;
+    overflow-y: visible;
     justify-content: center;
     align-items: center;
     text-align: center;

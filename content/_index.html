@@ -4,7 +4,7 @@
         <img src="/comixHomepage/images/mainblack.png" alt="Comix Digital logo." width="4096" height="4096" class="CDLogo" style="margin: 0 0">
     </a>
     <div id="pixelCloudDiv">
-        <img src="/comixHomepage/images/pixelCloud.png" alt="Pixelated cloud." width="300" height="169" id="ogPixelCloud">
+        <img src="/comixHomepage/images/pixelCloud.png" alt="Pixelated cloud." width="300" height="169" id="ogPixelCloud" class="pixelCloud">
     </div>
     <span id="bgChangeCircle"></span>
 </div>
@@ -19,6 +19,7 @@
     let CDLogo = document.querySelector(".CDLogo")
     let aButton = document.querySelector(".aButton")
     let pixelCloudDiv = document.querySelector("#pixelCloudDiv")
+    let ogPixelCloud = document.querySelector("#ogPixelCloud")
     let animationPlayed = false;
     let tl = gsap.timeline();
     const root = document.querySelector(':root');
@@ -71,12 +72,44 @@
             ctx.clearRect(0, 0, c.width, c.height);
         }
         console.log("Done");
+        pixelCloudDiv.style.clipPath = "unset";
         return 0;
+    }
+
+    async function pixelCloudAnimation(){
+        var initPixelCloud = document.createElement("img");
+        initPixelCloud = ogPixelCloud.cloneNode(true);
+        pixelCloudDiv.appendChild(initPixelCloud);
+        initPixelCloud.id = "";
+        initPixelCloud.style.top = `${Math.floor(Math.random() * (-50 - 20 + 1) + -50)}px`;
+        initPixelCloud.style.left = "20vw";
+        let initPxTl = gsap.timeline();
+        initPxTl.to(initPixelCloud, {
+            left: "100vw",
+            duration: 10,
+            ease: "none",
+            onComplete: () => initPixelCloud.remove()
+        })
+        window.setInterval(function () {
+            var pixelCloud = document.createElement("img");
+            pixelCloud = ogPixelCloud.cloneNode(true);
+            pixelCloudDiv.appendChild(pixelCloud);
+            pixelCloud.id = "";
+            pixelCloud.style.top = `${Math.floor(Math.random() * (-50 - 20 + 1) + -50)}px`;
+            let pxTl = gsap.timeline();
+            pxTl.to(pixelCloud, {
+                left: "100vw",
+                duration: 15,
+                ease: "none",
+                onComplete: () => pixelCloud.remove()
+            })
+        }, 4500)
     }
 
     aButton.addEventListener("mouseenter", function () {
         if (!animationPlayed) {
             animateCirclePixels();
+            pixelCloudAnimation();
             bgChangeCircle.style.display = "block";
             tl.to(bgChangeCircle, {
                 width: "80vmax",
