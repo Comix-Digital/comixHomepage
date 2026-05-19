@@ -7,8 +7,6 @@ tags: []
 categories: []
 ---
 
-This is the about page.
+Comix was founded on March 17ᵗʰ, 2026 and is the "parent company" to currently, Comix Digital.
 
-Yeah...
-
-Zane is gay.
+Check out Comix Digital by pressing the CD button on the home page.
