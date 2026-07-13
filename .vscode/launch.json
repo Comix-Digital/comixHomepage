@@ -5,7 +5,7 @@
       "type": "editor-browser",
       "request": "launch",
       "name": "Launch in integrated browser",
-      "url": "http://localhost:1313/comixHomepage"
+      "url": "http://localhost:1313/"
     }
   ]
 }
